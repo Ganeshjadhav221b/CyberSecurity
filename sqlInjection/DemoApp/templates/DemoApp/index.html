@@ -1,0 +1,15 @@
+{% extends 'DemoApp/base.html' %}
+{% block content %}
+
+     <div class="container nl_content">
+        <!--<div class="col-sm-12">--><h1><u><b>BRIEF ABOUT Alias Bank</b></u></h1>
+        <div class="clear"></div>
+        <br>
+         Bank of India (BOI) is a commercial bank with headquarters in the Bandra Kurla Complex, Mumbai and it is one of the top 5 banks in India. Founded in 1906, it has been government-owned since nationalisation in 1969. Bank of India has 5316 branches as of 31 March 2019, including 56 offices outside India, which includes five subsidiaries, five representative offices, and one joint venture.[3] BoI is a founder member of SWIFT (Society for Worldwide Inter Bank Financial Telecommunications), which facilitates provision of cost-effective financialprocessing and communication services.
+     </div>
+
+      <button type="submit" style="margin-left:800px;margin-top:200px;"><a href="{% url 'login' %}" >Login</a></button><br>
+
+      <button type="submit" style="margin-left:800px;margin-top:40px;"> <a href="{% url 'signup' %}" >Signup</a></button>
+
+{% endblock content %}

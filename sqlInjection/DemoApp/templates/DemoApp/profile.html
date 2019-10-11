@@ -1,0 +1,31 @@
+{% extends "DemoApp/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<style>
+    body
+    {
+        background-color:#b5acac;
+    }
+</style>
+
+
+
+    <div class="content-section">
+        <div style="height:400px;width:700px;background-color:#2a65b8;margin-left:20%;margin-top:5%">
+
+        <div class="media-body" style="position:absolute;left:20%;top:170px;color:black;">
+            <h2>Hello {{ username }}!</h2>
+            <h4>Your bank id: 000115454534545</h4>
+
+            <h4>Your bank account: EFIUEWRGFI65847865</h4>
+            <h4>Your bank balance : {{ balance}}</h4>
+        </div>
+
+      <br>
+
+        <button type="submit"  style="margin-left:600px;margin-top:300px;"><a href="{% url 'logout' %}">Logout</a></button></div>
+    </div>
+
+      </div>
+    </div>
+{% endblock content %}

@@ -1,0 +1,33 @@
+{% extends "DemoApp/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="content-section">
+
+
+<div style="height:400px;width:400px;background-color:#2a65b8;margin-left:40%;margin-top:5%">
+    <h2 style="color:white;font-size:200%;margin-left:35%;">Login</h2>
+       <form method="post">
+           {% csrf_token %}
+<!--            {{ form.non_field_errors }}-->
+           <label>Username</label><input type="text" name="username" required><br>
+        <label>Password</label><input type="password" name="password" required><br>
+            <button type="submit" style="margin-left:20px;margin-top:20px;">Login</button>
+        </form>
+
+        <div >
+
+            <a style="color:white;margin-left:20px;" href="/password-reset/">Forgot password?</a>
+            <br>
+            <br>
+            <small  style="color:white;margin-left:20px;">
+                Need An Account? <a class="ml-2" href="{% url 'signup' %}" style="color:white;">Sign Up Now</a>
+            </small>
+            <br>
+        </div>
+    </div>
+        </div>
+<div style="background-color:black;height:25%;width:100%;margin-top:32px">
+    <h4 style="color:white;padding:10px">Alias bank</h4>
+    <h5 style="color:white;padding-left:10px">Email:aliasbank@gmail.com</h5>
+</div>
+{% endblock content %}
